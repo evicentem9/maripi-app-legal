@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Política de Privacidad — MaRiPi</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background: #faf7f2;
+      color: #2c1f14;
+      line-height: 1.7;
+      padding: 2rem 1rem 4rem;
+    }
+
+    .container {
+      max-width: 720px;
+      margin: 0 auto;
+    }
+
+    header {
+      margin-bottom: 2.5rem;
+      border-bottom: 2px solid #c87941;
+      padding-bottom: 1.5rem;
+    }
+
+    .app-name {
+      font-size: 1rem;
+      font-weight: 600;
+      color: #c87941;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      margin-bottom: 0.4rem;
+    }
+
+    h1 {
+      font-size: 1.9rem;
+      font-weight: 700;
+      color: #2c1f14;
+      margin-bottom: 0.5rem;
+    }
+
+    .updated {
+      font-size: 0.875rem;
+      color: #7a6250;
+    }
+
+    h2 {
+      font-size: 1.1rem;
+      font-weight: 700;
+      color: #2c1f14;
+      margin: 2rem 0 0.75rem;
+    }
+
+    p {
+      margin-bottom: 0.75rem;
+      color: #3d2e20;
+    }
+
+    ul {
+      padding-left: 1.4rem;
+      margin-bottom: 0.75rem;
+    }
+
+    li {
+      margin-bottom: 0.35rem;
+      color: #3d2e20;
+    }
+
+    a {
+      color: #c87941;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .highlight-box {
+      background: #fff8f0;
+      border-left: 4px solid #c87941;
+      border-radius: 4px;
+      padding: 1rem 1.2rem;
+      margin: 1.2rem 0;
+    }
+
+    footer {
+      margin-top: 3rem;
+      padding-top: 1.5rem;
+      border-top: 1px solid #ddd0c4;
+      font-size: 0.85rem;
+      color: #7a6250;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <p class="app-name">MaRiPi</p>
+      <h1>Política de Privacidad</h1>
+      <p class="updated">Última actualización: 11 de mayo de 2026</p>
+    </header>
+
+    <h2>1. Responsable</h2>
+    <p>
+      Esta aplicación es desarrollada y mantenida por Eduardo Vicente Menéndez
+      (<a href="mailto:eduardo.vicente.menendez@gmail.com">eduardo.vicente.menendez@gmail.com</a>).
+    </p>
+
+    <h2>2. Datos que recopila la app</h2>
+
+    <p><strong>Datos almacenados localmente en tu dispositivo:</strong></p>
+    <ul>
+      <li>Grabaciones de voz (archivos de audio)</li>
+      <li>Transcripciones de texto</li>
+      <li>Fotografías añadidas a los capítulos</li>
+      <li>Textos de narrativa generados por IA</li>
+      <li>Claves de API (almacenadas en el Keychain del sistema, cifradas)</li>
+      <li>Preferencias de la app (UserDefaults)</li>
+    </ul>
+
+    <p><strong>Datos enviados a servicios de terceros</strong> (solo cuando el usuario lo solicita explícitamente):</p>
+    <ul>
+      <li>Texto de transcripciones → Anthropic (Claude) o OpenAI (GPT-4) para generación de narrativa</li>
+      <li>Audio de grabaciones → OpenAI (Whisper API) para transcripción, si el usuario activa este proveedor</li>
+    </ul>
+
+    <h2>3. Lo que NO recopilamos</h2>
+    <div class="highlight-box">
+      <ul>
+        <li>No recopilamos información de identificación personal (nombre, email, teléfono)</li>
+        <li>No compartimos datos con fines publicitarios</li>
+        <li>No rastreamos el uso de la app con analytics de terceros</li>
+        <li>Los archivos de audio nunca salen del dispositivo salvo que el usuario active Whisper explícitamente</li>
+      </ul>
+    </div>
+
+    <h2>4. Servicios de terceros</h2>
+    <p>
+      Cuando activas los servicios de IA, los datos se procesan según las políticas de privacidad de cada proveedor:
+    </p>
+    <ul>
+      <li>Anthropic: <a href="https://www.anthropic.com/privacy" target="_blank" rel="noopener">anthropic.com/privacy</a></li>
+      <li>OpenAI: <a href="https://openai.com/privacy" target="_blank" rel="noopener">openai.com/privacy</a></li>
+    </ul>
+
+    <h2>5. Sincronización en la nube</h2>
+    <p>
+      Si activas la sincronización, los textos y (opcionalmente) las fotos se sincronizan con:
+    </p>
+    <ul>
+      <li>iCloud: gestionado por Apple según sus condiciones de uso</li>
+      <li>Google Drive: gestionado por Google según sus condiciones de uso</li>
+    </ul>
+    <p>
+      La sincronización es opcional y está desactivada por defecto. Puedes activarla o desactivarla en
+      cualquier momento desde Ajustes → Sincronización.
+    </p>
+
+    <h2>6. Derechos del usuario</h2>
+    <p>
+      Puedes eliminar todos tus datos desde la propia app (eliminando libros, capítulos y grabaciones).
+      Para eliminar datos sincronizados en iCloud, usa las preferencias de iCloud de tu dispositivo.
+      Para datos en Google Drive, accede a tu cuenta en drive.google.com.
+    </p>
+
+    <h2>7. Seguridad</h2>
+    <p>
+      Las claves de API introducidas por el usuario se almacenan exclusivamente en el Keychain del
+      dispositivo, que es el almacenamiento cifrado del sistema operativo. No se transmiten ni almacenan
+      en ningún servidor propio.
+    </p>
+
+    <h2>8. Cambios en esta política</h2>
+    <p>
+      Si se realizan cambios relevantes en esta política, se actualizará la fecha indicada al inicio
+      del documento y, si procede, se notificará en las notas de la versión de la app.
+    </p>
+
+    <h2>9. Contacto</h2>
+    <p>
+      Para cualquier consulta sobre privacidad:<br />
+      <a href="mailto:eduardo.vicente.menendez@gmail.com">eduardo.vicente.menendez@gmail.com</a>
+    </p>
+
+    <footer>
+      <p>MaRiPi · Eduardo Vicente Menéndez · <a href="mailto:eduardo.vicente.menendez@gmail.com">eduardo.vicente.menendez@gmail.com</a></p>
+    </footer>
+  </div>
+</body>
+</html>
